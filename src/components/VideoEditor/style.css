@@ -1,0 +1,37 @@
+/* Yellow Range Slider */
+#range-slider-yellow {
+  background-color: transparent;
+  height: 50px;
+  padding: 0;
+}
+
+#range-slider-yellow .range-slider__range {
+  background: #f5f5f5;
+  cursor: move;
+  transition: height 100ms;
+}
+
+#range-slider-yellow .range-slider__thumb {
+  background: #616161;
+  width: 10px;
+  height: 20px;
+  cursor: e-resize;
+  border-radius: 2px;
+  transition: transform 0.3s;
+}
+
+#range-slider-yellow .range-slider__thumb[data-active] {
+  background-color: #2b79f6;
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+#range-slider-yellow .range-slider__range {
+  margin: 0;
+  height: 100%;
+  border: 2px solid #ddd;
+  transition: border 50ms;
+}
+
+#range-slider-yellow .range-slider__range[data-active] {
+  border: 2px solid #2b79f6;
+}
